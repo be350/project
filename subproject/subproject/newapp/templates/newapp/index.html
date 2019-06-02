@@ -8,27 +8,34 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo:400,700,800&display=swap&subset=korean" rel="stylesheet">
+
+    
     <title>wordcounter</title>
     <style>
       .aa{
-        margin: 50px;
+        margin: 5rem;
         text-align: center;
+        font-family: 'Nanum Myeongjo', serif;
       }
       .bb{
         text-align: center;
       }
+      .cc{
+        background-color: lightgoldenrodyellow;
+      }
     </style>
   </head>
 
-  <body>
+  <body class="cc">
     <h1 class="aa">{{text}}</h1>
-    <br><br>
+    <br>
     <form class="bb" action="{% url 'result' %}" method="GET">
-      <textarea cols="60" rows="10" name="text"></textarea><br><br>
+      <textarea cols="80" rows="10" name="text"></textarea><br><br><br>
       <button type="submit" class="btn btn-primary">제출</button>
     </form>
     <br><br><br>
-    <h4 class=bb><a href="{% url 'menu' %}">~ ABOUT ~</a></h4>
+    <h4 class=bb><a href="{% url 'menu' %}">~ ABOUT ~</a></h4><br><br>
 
 
     <!-- Optional JavaScript -->
